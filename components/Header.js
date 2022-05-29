@@ -9,7 +9,7 @@ const Header = () => {
       <div>
         <img src="/icons/Logo.svg" height="47" width="169" />
       </div>
-      <ul className="md:flex hidden justify-between gap-16 text-white">
+      <ul className="md:flex hidden justify-between lg:gap-16 gap-8 text-white">
         <li className="cursor-pointer">Home</li>
         <li className="cursor-pointer">About us</li>
         <li className="cursor-pointer">Gallery</li>
