@@ -6,7 +6,9 @@ import { IconButton } from "@mui/material";
 const Header = () => {
   return (
     <header className="flex justify-between items-center max-w-[1200px] mx-auto py-6 px-4 relative z-10">
-      <Image src="/icons/logo.svg" height="47" width="169" />
+      <div>
+        <img src="/icons/Logo.svg" height="47" width="169" />
+      </div>
       <ul className="md:flex hidden justify-between gap-16 text-white">
         <li className="cursor-pointer">Home</li>
         <li className="cursor-pointer">About us</li>
@@ -20,9 +22,11 @@ const Header = () => {
           placeholder="Search"
         />
       </div>
-      <IconButton className="block md:hidden">
-        <MenuIcon className="text-white" />
-      </IconButton>
+      <div className="block md:hidden">
+        <IconButton>
+          <MenuIcon className="text-white" />
+        </IconButton>
+      </div>
     </header>
   );
 };
