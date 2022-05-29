@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="flex flex-col items-center py-16 border-t-[3px] border-t-[#476072] text-white">
       <div className="flex items-center mb-4">
         <div className="border-r border-r-[#476072] pr-3">
-          <Image src="/icons/logo.svg" height="31" width="113" />
+          <Image src="/icons/Logo.svg" height="31" width="113" />
         </div>
         <p className="pl-3 text-2xl font-bold">Corporate</p>
       </div>
