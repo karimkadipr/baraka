@@ -1,10 +1,11 @@
-import Image from "next/image";
-import styles from "../styles/Home.module.css";
-import { makeStyles } from "@mui/styles";
-import Form from "./HomeComponents/Form";
-import Header from "./HomeComponents/Header";
-import WhichPart from "./HomeComponents/WhichPart";
 import { useState } from "react";
+import Image from "next/image";
+import { makeStyles } from "@mui/styles";
+import Form from "../components/HomeComponents/Form";
+import OurProject from "../components/HomeComponents/OurProject";
+import WhichPart from "../components/HomeComponents/WhichPart";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 const useStyles = makeStyles({
   btn: {
@@ -30,7 +31,8 @@ export default function Home() {
   const classes = useStyles();
 
   return (
-    <div className="bg-[#151513]">
+    <>
+      <Header />
       <div className="max-w-[1200px] my-0 mx-auto">
         <div className="First_Title text-center  flex justify-center mb-9 pt-24">
           <h1 className="text-[#F8F8F8] font-mono px-4 font-bold text-[26px] sm:text-[34px] max-w-[642px] leading-10">
@@ -41,9 +43,9 @@ export default function Home() {
           className="text-center mb-16
         "
         >
-          <Image src="/icons/icon.svg" height="267px" width="625.42px" />
+          <Image src="/icons/icon.svg" height="267px" width="625px" />
         </div>
-        <Header classes={classes} />
+        <OurProject classes={classes} />
 
         {clicked ? (
           <Form classes={classes} clicked={clicked} setClicked={setClicked} />
@@ -54,7 +56,8 @@ export default function Home() {
             clicked={clicked}
           />
         )}
+        <Footer />
       </div>
-    </div>
+    </>
   );
 }

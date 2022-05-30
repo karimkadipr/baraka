@@ -1,12 +1,10 @@
 import React from "react";
-import styles from "../../styles/Home.module.css";
 import { Button } from "@mui/material";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import LoginIcon from "@mui/icons-material/Login";
 import Image from "next/image";
 
-export default function Header(props) {
-  const classes = props.classes;
+export default function OurProject({ classes }) {
   return (
     <>
       <div className="Our_Project flex flex-col gap-8 xl:gap-[120px] px-6 mb-40 lg:flex-row items-center ">
